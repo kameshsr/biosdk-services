@@ -31,7 +31,7 @@ DIR_NAME=$biosdk_local_dir_name
 #  unzip -d "$DIR_NAME" $FILE_NAME
 #fi
 
-unzip -d "$DIR_NAME" $FILE_NAME
+unzip -o -d "$DIR_NAME" $FILE_NAME
 
 echo "Copying to loader path"
 cp -R ./$DIR_NAME/* $loader_path_env
